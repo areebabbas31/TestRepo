@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Test.Models.New>
+
+<h2>Tests</h2>
+
+<p>
+    <a href="@Url.Action("AddRandom", "New")">➕ Add Random Test</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>NewId</th>
+            <th>Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.NewId</td>
+                <td>@item.Number</td>
+            </tr>
+        }
+    </tbody>
+</table>
