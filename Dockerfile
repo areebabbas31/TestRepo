@@ -5,7 +5,7 @@ WORKDIR /src
 
 COPY ./*.sln ./
 COPY ./Test.csproj ./Test.csproj
-RUN  dotnet restore ./Test/Test.csproj
+RUN  dotnet restore ./Test.csproj
 
 
 WORKDIR /src
