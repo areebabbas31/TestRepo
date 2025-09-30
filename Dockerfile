@@ -4,7 +4,7 @@ WORKDIR /src
 
 
 COPY ./*.sln ./
-COPY Test/Test.csproj BulkyBookWeb/BulkyBookWeb.csproj
+COPY Test/Test.csproj Test/Test.csproj
 RUN  dotnet restore ./Test/Test.csproj
 
 
